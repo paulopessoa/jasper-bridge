@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+# -*- encoding: utf-8 -*-
+
+#require '...
+
+#gen = SabiusGen::Gen.new
+#gen.generate(modulo, dominio, tipo, ops)
+
+puts "\Dir: #{Dir.getwd}"
