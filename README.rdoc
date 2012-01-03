@@ -2,27 +2,27 @@
 
 == Install
 
-    Run in console:
-    gem install jasper-bridge
+Run in console:
+  gem install jasper-bridge
 
-    Add in Gemfile:
-    gem 'jasper-bridge'
+Add in Gemfile:
+  gem 'jasper-bridge'
 
 == Use
 
-    1.Insert the statement inside the controller class:
+1.Insert the statement inside the controller class:
 
-        include Jasper::Bridge
+  include Jasper::Bridge
 
-    2.Make sure your jasper file is in the "#{Rails.root}/reports" directory.
+2.Make sure your jasper file is in the "#{Rails.root}/reports" directory.
 
-    3.Call to method in the action of controller, for return the report on response:
-    Ex.:
-        send_doc(@products.to_xml, '/products/product', 'Products.jasper', "Products", params[:output_type])
+3.Call to method in controller to return the report on response:
+
+  Ex.: send_doc(@products.to_xml, '/products/product', 'Products.jasper', "Products", params[:output_type])
 
 == Jasper Version
 
-    This gem use JasperReports 3.7.6.
+  This gem use JasperReports 3.7.6.
 
 == Copyright
 Copyright (c) 2011 paulopessoa. See LICENSE.txt for further details.
