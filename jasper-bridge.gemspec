@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Paulo Pessoa"]
   s.email       = ["paulopessoa@gmail.com"]
   s.homepage    = "https://github.com/paulopessoa/jasper-bridge"
-  s.summary     = %q{Bridge from RoR to Jasper}
-  s.description = %q{Bridge from RoR to Jasper}
+  s.summary     = %q{Bridge from RoR to Jasper by IO.popen}
+  s.description = %q{Bridge from RoR to Jasper by IO.popen}
 
   s.rubyforge_project = "jasper-bridge"
 
