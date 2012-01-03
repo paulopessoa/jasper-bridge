@@ -26,8 +26,9 @@ module Jasper
         :disposition => 'inline' #'attachment'
     end
 
-    def teste
-      print 
+    def self.teste
+      p 'dir=' + File.expand_path("../../",__FILE__)
     end
+    
   end
 end

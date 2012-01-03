@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<produtos>
+  <produto>
+    <cod-produto>1</cod-produto>
+    <created-at>2011-09-19T14:34:15Z</created-at>
+    <nome>bolacha</nome>
+    <updated-at>2011-09-19T14:34:15Z</updated-at>
+  </produto>
+  <produto>
+    <cod-produto>2</cod-produto>
+    <created-at>2011-09-19T17:33:55Z</created-at>
+    <nome>biscoito</nome>
+    <updated-at>2011-09-19T17:33:55Z</updated-at>
+  </produto>
+  <produto>
+    <cod-produto>3</cod-produto>
+    <created-at>2011-09-19T17:34:40Z</created-at>
+    <nome>macarr&#227;o</nome>
+    <updated-at>2011-09-19T17:34:40Z</updated-at>
+  </produto>
+  <produto>
+    <cod-produto>4</cod-produto>
+    <created-at>2011-09-19T17:35:34Z</created-at>
+    <nome>feij&#227;o</nome>
+    <updated-at>2011-09-19T17:35:34Z</updated-at>
+  </produto>
+  <produto>
+    <cod-produto>5</cod-produto>
+    <created-at>2011-09-19T17:36:00Z</created-at>
+    <nome>arroz</nome>
+    <updated-at>2011-09-19T17:36:00Z</updated-at>
+  </produto>
+  <produto>
+    <cod-produto>6</cod-produto>
+    <created-at>2011-09-19T17:36:39Z</created-at>
+    <nome>&#225;gua</nome>
+    <updated-at>2011-09-19T17:36:39Z</updated-at>
+  </produto>
+  <produto>
+    <cod-produto>7</cod-produto>
+    <created-at>2011-09-19T17:39:32Z</created-at>
+    <nome>miojo</nome>
+    <updated-at>2011-09-19T17:39:32Z</updated-at>
+  </produto>
+</produtos>

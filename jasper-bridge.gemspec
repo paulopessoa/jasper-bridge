@@ -15,9 +15,10 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "jasper-bridge"
 
 #  s.files         = `git ls-files`.split("\n")
-  s.files       = Dir["{lib/**/*.rb,README.rdoc,test/**/*.rb,Rakefile,*.gemspec,jasper/**}"]
+  s.files       = Dir["{lib/**/*.rb,README.rdoc,test/**/*.rb,Rakefile,*.gemspec,jasper/bin/**,jasper/lib/**}"]
 #  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.test_files    = Dir["{test/*}"]
 #  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.executables = ["jb"]
+#  s.executables = ["jb"]
   s.require_paths = ["lib"]
 end
