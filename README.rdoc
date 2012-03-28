@@ -8,29 +8,33 @@ A bridge from RubyOnRails to Jasper.
 
 == Install
 
-Run in console:
-
-  gem install jasper-bridge
-
-Add in Gemfile:
-
+In Gemfile: 
   gem 'jasper-bridge'
+
+Run 'bundle install' or in console 'gem install jasper-bridge'.
 
 == Use
 
-1.Insert the statement inside the controller class:
+1.In controller class:
 
-  include Jasper::Bridge
+  require 'jasper-bridge'
+  class ProductsController < ApplicationController
+    include Jasper::Bridge
+    ...
+  end
 
-2.Make sure your jasper file is in the "#{Rails.root}/reports" directory.
+2.Put jasper file in "#{Rails.root}/reports" directory.
 
-3.Call to method in controller to return the report on response:
+3.In action of the controller, call method 'send_doc' to response the report. Like the example:
 
-  Ex.: send_doc(@products.to_xml, '/products/product', 'Products.jasper', "Products", params[:output_type])
+  def index
+    @produtos = Produto.all
+    send_doc(@products.to_xml, '/products/product', 'Products.jasper', "Products", params[:output_type])
+  end
 
-== Jasper Version
+== Jasper Lib Versions
 
-This gem use JasperReports 3.7.6.
+The java libs on this gem is from JasperReports 3.7.6. So reports must be compiled in the same version.
 
 == Copyright
 Copyright (c) 2011 paulopessoa. See LICENSE.txt for further details.
