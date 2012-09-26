@@ -11,11 +11,11 @@ A bridge from RubyOnRails to Jasper.
 In Gemfile: 
   gem 'jasper-bridge'
 
-Run 'bundle install' or in console 'gem install jasper-bridge'.
+Run 'bundle install'.
 
 == Use
 
-1.In controller class:
+1. In controller class:
 
   require 'jasper-bridge'
   class ProductsController < ApplicationController
@@ -23,14 +23,21 @@ Run 'bundle install' or in console 'gem install jasper-bridge'.
     ...
   end
 
-2.Put jasper file in "#{Rails.root}/reports" directory.
+2. Put jasper file in "#{Rails.root}/reports" directory.
 
-3.In action of the controller, call method 'send_doc' to response the report. Like the example:
+3. In action of the controller, call method 'send_doc' to response the report. Like the example:
 
   def index
     @produtos = Produto.all
     send_doc(@products.to_xml, '/products/product', 'Products.jasper', "Products", params[:output_type])
   end
+
+The parameters of 'send_doc' are:
+  - content of XML
+  - Xpath of XML node used
+  - name of the jasper file
+  - name used for file save (without extesion)
+  - extension of filetype returned (pdf, csv, rtf, html). Types differents of pdf are not tested.
 
 == Jasper Lib Versions
 
