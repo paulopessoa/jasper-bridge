@@ -37,7 +37,7 @@ The parameters of 'send_doc' are:
   - Xpath of XML node used
   - name of the jasper file
   - name used for file save (without extesion)
-  - extension of filetype returned (pdf, csv, rtf, html). Types differents of pdf are not tested.
+  - extension string of filetype returned ('pdf', 'csv', 'rtf', 'html'). Types differents of pdf are not tested.
 
 == Jasper Lib Versions
 
