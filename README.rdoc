@@ -15,7 +15,7 @@ Run 'bundle install'.
 
 == Use
 
-1. In controller class:
+1.In controller class:
 
   require 'jasper-bridge'
   class ProductsController < ApplicationController
@@ -23,9 +23,9 @@ Run 'bundle install'.
     ...
   end
 
-2. Put jasper file in "#{Rails.root}/reports" directory.
+2.Put jasper file in "#{Rails.root}/reports" directory.
 
-3. In action of the controller, call method 'send_doc' to response the report. Like the example:
+3.In action of the controller, call method 'send_doc' to response the report. Like the example:
 
   def index
     @products = Product.all
