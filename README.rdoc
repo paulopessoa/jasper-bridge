@@ -4,7 +4,7 @@ A bridge from RubyOnRails to Jasper.
 
 == Requires
 
-1. Java (JDK) - http://www.oracle.com/technetwork/java/javase/downloads/index.html
+Java (JDK) - http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
 == Install
 
@@ -28,16 +28,16 @@ Run 'bundle install'.
 3. In action of the controller, call method 'send_doc' to response the report. Like the example:
 
   def index
-    @produtos = Produto.all
+    @products = Product.all
     send_doc(@products.to_xml, '/products/product', 'Products.jasper', "Products", params[:output_type])
   end
 
-The parameters of 'send_doc' are:
-  - content of XML
-  - Xpath of XML node used
-  - name of the jasper file
-  - name used for file save (without extesion)
-  - extension string of filetype returned ('pdf', 'csv', 'rtf', 'html'). Types differents of pdf are not tested.
+The parameters in order of 'send_doc' are:
+  content of XML
+  Xpath of XML node used
+  name of the jasper file
+  name used for file save (without extesion)
+  extension string of filetype returned ('pdf', 'csv', 'rtf', 'html'). Types differents of pdf are not tested.
 
 == Jasper Lib Versions
 
