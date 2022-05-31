@@ -4,5 +4,5 @@ source "http://rubygems.org"
 gemspec
 
 group :development do
-  gem "bundler", "~> 1.0.0"
+  gem "bundler", ">= 2.2.33"
 end
